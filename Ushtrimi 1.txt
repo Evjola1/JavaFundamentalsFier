@@ -1,0 +1,234 @@
+Ushtrimi 1
+Deklaroni nje variabel me emrin count  te tipit  int me vlere  40 . Se dyti, deklaroni nje variabel 
+me emrin language  te tipit string me vlere  "Java".  Se treti, deklaroni  nje variabel te quajtur 
+amount te tipit double me vlere 23.63. Ne fund, printoni te gjitha variablat ne console.
+
+
+
+public class Ushtrimi1 {
+    public static void main(String[] args){
+        int count = 40;
+        String language = "Java";
+        double amount = 23.63;
+        System.out.print(count);
+        System.out.print(language);
+        System.out.print(amount);
+    }
+}
+
+
+
+
+
+Ushtrimi 2
+Shkruani nje program qe do beje te mundur konvertimin e nje variabli temperature nga grade 
+celcius  (degrees Fahrenheit = 1.8 * degrees Celsius + 32.0)  ne grade Fahrenheit dhe do afishoje 
+rezultatin ne console. Temperatura ne celcius do te merret nga perdoruesi ne console duke 
+perdorur klasen Scanner
+
+
+
+import java.util.Scanner;
+
+public class Ushtrimi2 {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        float tempGradeCelcius = scanner.nextFloat();
+        System.out.println("Result" + (1.8 * tempGradeCelcius + 32.0));
+    }
+}
+
+
+Ushtrimi 3
+
+
+uke u nisur nga program i meposhtem kryeni te gjitha ndryshimet per te perdorur operatoret e 
+vleredhenies te perbere (+=, *= , /= ...) 
+Public class Ushtrim { 
+    public static void main (String[] args){ 
+        int result = 1 + 2; // result is now 3 
+        System.out.println(result); 
+        result = result - 1; // result is now 2 
+        System.out.println(result); 
+        result = result * 2; // result is now 4 
+        System.out.println(result); 
+        result = result / 2; // result is now 2 
+        System.out.println(result); 
+        result = result + 8; // result is now 10 
+        result = result % 7; // result is now 3 
+        System.out.println(result);
+
+
+
+
+
+public class Ushtrimi2 {
+    public static void main(String[] args){
+        int result = 3;
+        System.out.println("Result " + result); // 3
+        result = result -1;
+        System.out.println("Result " + result); // 2
+        result = result * 2;
+        System.out.println("Result " + result); // 4
+        result = result / 2;
+        System.out.println("Result " + result); // 2
+        result = result / 2;
+        System.out.println("Result"+ result); // 10
+        result = result + 8;
+        System.out.println("Result"+ result); // 3
+        result = result /7;
+
+
+
+
+Ushtrimi 4
+
+public class Ushtrimi2 {
+    public static void main(String[] args) {
+        int i = 3;
+        i++;
+        System.out.println(i);    // "4"           Printim vlera 4 sepse 3+1 =4
+        ++i;
+        System.out.println(i);    // "5"           Nga 4 vl. e variable ne memory ndryshon ne 5
+        System.out.println(++i);  // "6"           Para Inkrementimi , para se te behet printimi vlera e variable ne memorje nga 5 behet 6.          
+        System.out.println(i++);  // "6"           Dekrementimi nga 6 mbetet 6 
+        System.out.println(i);    // "7"           Ne memorje mbetet vlera 7.
+    }
+}
+
+
+
+
+
+Ushtrimi 6
+
+Shkruani nje program Java per te printuar siperfaqen dhe perimetrin e nje drejtkendeshi. 
+Gjatesia dhe gjeresia e programit do te merret nga perdoruesi ne console duke perdorur klasen 
+Scanner.
+
+
+
+import java.util.Scanner;
+public class Ushtrimi6 {
+    public static void main(String[] args)
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Vendos gjeresine: ");
+        double gjeresia = scanner.nextDouble();
+        System.out.println("Vendos gjatesine: ");
+        double gjatesia = scanner.nextDouble();
+        System.out.println("Siperfaqa eshte" + (gjeresia * gjatesia));
+        System.out.println("Perimetri eshte:" );
+        System.out.println(2*(gjatesia + gjeresia));
+    }
+}
+
+
+
+
+
+
+
+Ushtrimi 5
+
+Shkruaj nje program qe bazuar ne nje numer te dhene: boolean) gjen nese numri i dhene eshte 
+perpjestues me numrin 5 ose jo. Numri i dhene mund te lexohet nga perdoruesi ose mund te 
+vendoset nga ju (si te deshironi) 
+
+
+
+
+import java.util.Scanner;
+
+public class Ushtrimi5{
+        public static void main(String[] args){
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Fusni nje numer :");
+            int number= scanner.nextInt();
+            if (number %5 == 0)
+                System.out.println("Numri plotpjestohet me 5");
+            else
+                System.out.println("Numri nuk plotpjestohet me 5");
+        }
+}
+
+
+
+
+
+Ushtrimi 7
+Shkruani një program ne Java i cili printon  shumën, produktin, diferencen dhe mbetjen e 2 
+numrave. Numrat  e programit do te merret nga perdoruesi ne console duke perdorur klasen 
+Scanner.
+
+
+import java.sql.SQLOutput;
+import java.util.Scanner;
+public class Ushtrimi7{
+        public static void main(String[] args){
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Vendos nr.1");
+            double nr.1 = scanner.nextDouble();
+            System.out.println("Vendos nr.2");
+            double nr.2 = scanner.nextDouble();
+            System.out.println("shuma e dy numrave eshte : nr.1 )
+        }
+}
+
+
+
+
+
+
+
+Ushtrimi 9
+
+Cili nga opsionet e meposhtme eshte i sakte ne deklarimin dhe inicializimin e nje variabli  
+      // 1 
+        int value = "Java";         
+        // 2 
+        int value = 56;                 - kjo eshte e sakte. pasi value eshte nr.
+        // 3 
+        boolean booleanValue = 98; 
+        // 4 
+        boolean booleanValue = "SDA"; 
+        // 5 
+        boolean booleanValue = "true"; 
+        // 6 
+        boolean booleanValue = false;    - kjo eshte e sakte sepse nr. boolean eshte false ose true pa thonjeza.
+
+
+
+
+
+Ushtrimi 8
+
+public class Ushtrimi8 {
+        public static void main(String[] args){
+            boolean flag = true;
+            flag = false;
+            System.out.println(flag);
+        }
+}
+
+
+
+
+
+Ushtrimi 12
+
+Shkruani nje program ne java per te konvertuar sekondat ne ore:minuta:sekonda. 
+ 
+
+import java.util.Scanner;
+
+    public class Ushtrimi12 {
+        public static void main(String[] args){
+            Scanner scanner = new Scanner(System.in);
+            int userInput = scanner.nextInt();
+            int sekondat = userInput % 60;
+            int oret = userInput / 60;
+            int minutat = oret % 60;
+            oret = oret / 60;
+            System.out.println(oret + ':' + minutat + ':' + sekondat);
+        }
+    }
